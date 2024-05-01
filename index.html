@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr" class="bg-dark text-white">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josaphat ALLAGBE - Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <style>
+    .animate__swing {
+      --animate-duration: 4s;
+      --animate-delay: 1s;
+    }
+    .animate__backInUp {
+      --animate-duration: 3s
+    }
+  </style>
+</head>
+
+<body>
+  <header class="py-4">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+      <!-- <a href="../index.html" class="btn bg-primary text-white position-fixed ms-2" data-bs-toggle="tooltip"
+         data-bs-placement="right" title="Ne pas inclure dans l'intégration">Retour</a> -->
+      <div class="container">
+        <a class="navbar-brand text-uppercase fw-bold" href="#">
+          <span class="bg-primary bg-gradient p-1 rounded-3 text-light">Josaphat</span> ALLAGBE
+        </a>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#johndoe">Qui suis-je ?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#expertise">Expertises</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+<!-- Bouton de la barre de navigation -->
+        <!-- Bouton de la barre de navigation -->
+        <button class="navbar-toggler p-1 p-md-2 rounded-pill" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Contenu de l'offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#johndoe" data-bs-dismiss="offcanvas">Qui suis-je ?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#expertise" data-bs-dismiss="offcanvas">Expertises</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#portfolio" data-bs-dismiss="offcanvas">Portfolio</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- JavaScript pour fermer l'offcanvas lorsqu'un élément de menu est cliqué -->
+        <script>
+          document.querySelectorAll('#offcanvasExample .navbar-nav .nav-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+              var offcanvas = document.querySelector('#offcanvasExample');
+              var offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+              offcanvasInstance.hide();
+            });
+          });
+        </script>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <!-- Josaphat -->
+    <section id="johndoe" class="my-5">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-12 col-md-6">
+            <h1 class="fw-bold">Je suis <b class="fw-bold">Josaphat ALLAGBE</b> Etudiant en Informatique de Gestion</h1>
+            <h2 class="fw-light">Bienvenue dans mon univers créatif</h2>
+            <a href="#expertise" class="btn btn-primary mt-5 animate__animated animate__swing">Mon expertise web</a>
+          </div>
+          <div class="col-12 col-md-6 animate__animated animate__backInUp">
+            <img src="icone/IMG_0333-removebg-preview.png" alt="Josaphat ALLAGBE" width="100%" class="rounded-3 shadow bg-primary">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise -->
+    <section id="expertise" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-0">Mon expertise</h2>
+        <h3 class="fw-light fs-5">Développement web et design</h3>
+        <!-- Developpement -->
+        <div class="row align-items-center gy-4 mt-4">
+          <div class="col-12 col-md-7">
+
+            <!-- Progress bar -->
+            <div class="mb-3 p-3 bg-white rounded-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="d-flex align-items-center mb-5">
+                    <i class="fab fa-bootstrap fa-2x me-3 text-primary"></i>
+                    <p class="fw-bold m-0">Bootstrap5</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress" data-bs-toggle="tooltip" title="w-75">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3 p-3 bg-white rounded-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 22 22" style="fill: rgb(63, 176, 228);"><circle cx="12" cy="11.245" r="1.785"></circle><path d="m7.002 14.794-.395-.101c-2.934-.741-4.617-2.001-4.617-3.452 0-1.452 1.684-2.711 4.617-3.452l.395-.1.111.391a19.507 19.507 0 0 0 1.136 2.983l.085.178-.085.178c-.46.963-.841 1.961-1.136 2.985l-.111.39zm-.577-6.095c-2.229.628-3.598 1.586-3.598 2.542 0 .954 1.368 1.913 3.598 2.54.273-.868.603-1.717.985-2.54a20.356 20.356 0 0 1-.985-2.542zm10.572 6.095-.11-.392a19.628 19.628 0 0 0-1.137-2.984l-.085-.177.085-.179c.46-.961.839-1.96 1.137-2.984l.11-.39.395.1c2.935.741 4.617 2 4.617 3.453 0 1.452-1.683 2.711-4.617 3.452l-.395.101zm-.41-3.553c.4.866.733 1.718.987 2.54 2.23-.627 3.599-1.586 3.599-2.54 0-.956-1.368-1.913-3.599-2.542a20.683 20.683 0 0 1-.987 2.542z"></path><path d="m6.419 8.695-.11-.39c-.826-2.908-.576-4.991.687-5.717 1.235-.715 3.222.13 5.303 2.265l.284.292-.284.291a19.718 19.718 0 0 0-2.02 2.474l-.113.162-.196.016a19.646 19.646 0 0 0-3.157.509l-.394.098zm1.582-5.529c-.224 0-.422.049-.589.145-.828.477-.974 2.138-.404 4.38.891-.197 1.79-.338 2.696-.417a21.058 21.058 0 0 1 1.713-2.123c-1.303-1.267-2.533-1.985-3.416-1.985zm7.997 16.984c-1.188 0-2.714-.896-4.298-2.522l-.283-.291.283-.29a19.827 19.827 0 0 0 2.021-2.477l.112-.16.194-.019a19.473 19.473 0 0 0 3.158-.507l.395-.1.111.391c.822 2.906.573 4.992-.688 5.718a1.978 1.978 0 0 1-1.005.257zm-3.415-2.82c1.302 1.267 2.533 1.986 3.415 1.986.225 0 .423-.05.589-.145.829-.478.976-2.142.404-4.384-.89.198-1.79.34-2.698.419a20.526 20.526 0 0 1-1.71 2.124z"></path><path d="m17.58 8.695-.395-.099a19.477 19.477 0 0 0-3.158-.509l-.194-.017-.112-.162A19.551 19.551 0 0 0 11.7 5.434l-.283-.291.283-.29c2.08-2.134 4.066-2.979 5.303-2.265 1.262.727 1.513 2.81.688 5.717l-.111.39zm-3.287-1.421c.954.085 1.858.228 2.698.417.571-2.242.425-3.903-.404-4.381-.824-.477-2.375.253-4.004 1.841.616.67 1.188 1.378 1.71 2.123zM8.001 20.15a1.983 1.983 0 0 1-1.005-.257c-1.263-.726-1.513-2.811-.688-5.718l.108-.391.395.1c.964.243 2.026.414 3.158.507l.194.019.113.16c.604.878 1.28 1.707 2.02 2.477l.284.29-.284.291c-1.583 1.627-3.109 2.522-4.295 2.522zm-.993-5.362c-.57 2.242-.424 3.906.404 4.384.825.47 2.371-.255 4.005-1.842a21.17 21.17 0 0 1-1.713-2.123 20.692 20.692 0 0 1-2.696-.419z"></path><path d="M12 15.313c-.687 0-1.392-.029-2.1-.088l-.196-.017-.113-.162a25.697 25.697 0 0 1-1.126-1.769 26.028 26.028 0 0 1-.971-1.859l-.084-.177.084-.179c.299-.632.622-1.252.971-1.858.347-.596.726-1.192 1.126-1.77l.113-.16.196-.018a25.148 25.148 0 0 1 4.198 0l.194.019.113.16a25.136 25.136 0 0 1 2.1 3.628l.083.179-.083.177a24.742 24.742 0 0 1-2.1 3.628l-.113.162-.194.017c-.706.057-1.412.087-2.098.087zm-1.834-.904c1.235.093 2.433.093 3.667 0a24.469 24.469 0 0 0 1.832-3.168 23.916 23.916 0 0 0-1.832-3.168 23.877 23.877 0 0 0-3.667 0 23.743 23.743 0 0 0-1.832 3.168 24.82 24.82 0 0 0 1.832 3.168z"></path></svg>
+                    <p class="fw-bold m-0">NextJS</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress" data-bs-toggle="tooltip" title="75%">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3 p-3 bg-white rounded-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgb(84, 98, 218);"><path d="M13.9 2.01 3.9 12l3.09 3.09 2.71-2.7L20.09 2l-6.19.01zm.82 14.6 5.39-5.38h-5.93c-.11 0-.26 0-.34.07l-2.23 2.23-3.09 3.07 3.09 3.1 2.15 2.15c.07.07.14.17.26.15h6.07z"></path></svg>
+                    <p class="fw-bold m-0">Flutter</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress" data-bs-toggle="tooltip" title="50%">
+                    <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3 p-3 bg-white rounded-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="d-flex align-items-center">
+                    <img src="./icone/odoo.png" alt="odoo" style="width: 50px;">
+                    <p class="fw-bold m-0">Module Odoo</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress" data-bs-toggle="tooltip" title="75%">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3 p-3 bg-white rounded-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 22 22 " style="fill: rgba(45, 113, 226, 1);"><path d="M2.15 16.78h1.57a.14.14 0 0 0 .14-.12l.35-1.82h1.22a4.88 4.88 0 0 0 1.51-.2A2.79 2.79 0 0 0 8 14a3.18 3.18 0 0 0 .67-.85 3.43 3.43 0 0 0 .36-1 2.43 2.43 0 0 0-.41-2.16 2.64 2.64 0 0 0-2.09-.78h-3a.16.16 0 0 0-.15.13L2 16.6a.19.19 0 0 0 0 .13.17.17 0 0 0 .15.05zM5 10.62h1a1.45 1.45 0 0 1 1.08.29c.17.18.2.52.11 1a1.81 1.81 0 0 1-.57 1.12 2.17 2.17 0 0 1-1.33.33h-.8zm9.8-.95a2.7 2.7 0 0 0-1.88-.51h-1.19l.33-1.76a.15.15 0 0 0 0-.13.16.16 0 0 0-.11 0h-1.57a.14.14 0 0 0-.14.12l-1.38 7.27a.13.13 0 0 0 0 .12.13.13 0 0 0 .11.06h1.54a.14.14 0 0 0 .14-.13l.77-4.07h1.11c.45 0 .61.1.66.16a.81.81 0 0 1 0 .62l-.61 3.24a.13.13 0 0 0 0 .12.14.14 0 0 0 .11.06h1.56a.16.16 0 0 0 .15-.13l.64-3.4a1.7 1.7 0 0 0-.24-1.64zm4.52-.51h-3.13a.14.14 0 0 0-.15.13l-1.46 7.31a.16.16 0 0 0 0 .13.14.14 0 0 0 .11.05h1.63a.14.14 0 0 0 .15-.12l.37-1.82h1.27a5.28 5.28 0 0 0 1.56-.2 3 3 0 0 0 1.18-.64 3.31 3.31 0 0 0 .7-.85 3.45 3.45 0 0 0 .37-1 2.38 2.38 0 0 0-.42-2.16 2.81 2.81 0 0 0-2.18-.83zm.62 2.77a1.83 1.83 0 0 1-.6 1.12 2.28 2.28 0 0 1-1.37.33h-.8l.54-2.76h1a1.6 1.6 0 0 1 1.13.29c.16.18.16.52.1 1.02z"></path></svg>
+                    <p class="fw-bold m-0">Laragon</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress" data-bs-toggle="tooltip" title="75%">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 offset-md-1 col-md-4">
+            <img src="icone/code.jpg" alt="écran montrant du code php" width="100%" class="rounded-3 shadow">
+          </div>
+        </div>
+
+        <!-- Design -->
+        <div class="row align-items-center gy-4 mt-4">
+          <div class="col-12 col-md-4">
+            <img src="icone/design.jpg" alt="écran montrant des designs" width="100%" class="rounded-3 shadow">
+          </div>
+          <div class="col-12 order-first offset-md-1 col-md-7 order-md-last">
+
+            <!-- Progress bar -->
+            <div class="mb-3 p-3 bg-white rounded-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="d-flex align-items-center">
+                    <i class="fab fa-figma fa-2x me-3 text-primary"></i>
+                    <p class="fw-bold m-0">Figma</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress" data-bs-toggle="tooltip" title="50%">
+                    <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="mb-3 p-3 bg-white rounded-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-photo-video fa-2x me-3 text-primary"></i>
+                    <p class="fw-bold m-0">Suite Adobe</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress" data-bs-toggle="tooltip" title="100%">
+                    <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="mb-3 p-3 bg-white rounded-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-palette fa-2x me-3 text-primary"></i>
+                    <p class="fw-bold m-0">Design Canva</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress" data-bs-toggle="tooltip" title="75%">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3 p-3 bg-white rounded-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="d-flex align-items-center">
+                    <img src="./icone/odoo.png" alt="odoo" style="width: 50px;">
+                    <p class="fw-bold m-0">Odoo Front-end</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress" data-bs-toggle="tooltip" title="75%">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3 p-3 bg-white rounded-3 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-video fa-2x me-3 text-primary"></i>
+                    <p class="fw-bold m-0">Vidéo</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="progress" data-bs-toggle="tooltip" title="50%">
+                    <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+
+    </section> 
+
+    <!-- Contact -->
+    
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-0">Un projet de création web ?</h2>
+        <h3 class="fw-light fs-5">Allons en discuter autour d'un café</h3>
+
+        <div class="row gy-4 mt-4">
+          <div class="col-12 col-md-5">
+            <img src="icone/grab-a-coffee.jpg" alt="Image d'une tasse de café" width="100%" class="rounded-3 shadow">
+          </div>
+          <div class="col-12 offset-md-1 col-md-6">
+
+            <!-- Formulaire -->
+            <form class="row">
+              <div class="col-6 my-2">
+                <label for="firstname" class="form-label">Prénom</label>
+                <input name="firstname" type="text" class="form-control" id="firstname">
+              </div>
+              <div class="col-6 my-2">
+                <label for="name" class="form-label">Nom</label>
+                <input name="name" type="text" class="form-control" id="name">
+              </div>
+              <div class="col-12 my-2">
+                <label for="email" class="form-label">Email address</label>
+                <input name="email" type="email" class="form-control" id="email">
+              </div>
+              <div class="col-12 my-2">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <div class="col-12 my-2">
+                <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Pied du site -->
+  </main>
+  <footer class="border-top">
+    <div class="container py-5">
+      <div class="row gy-4 align-items-center">
+        <div class="col-12 col-md-4">
+          <a class="navbar-brand text-dark text-uppercase fw-bold" href="#">
+            <span class="bg-primary bg-gradient p-1 rounded-3 text-light">Josaphat</span> ALLAGBE
+          </a>
+        </div>
+        <div class="col-12 col-md-4 text-md-center">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#" class="text-decoration-none text-dark" data-bs-toggle="modal"
+                 data-bs-target="#mentionsLegales">Vision</a>
+            </li>
+          </ul>
+        </div>
+        <!-- mes contacts -->
+        <div class="col-12 col-md-4 text-md-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="https://web.facebook.com/Algjojo.algjojo" class="text-decoration-none text-dark"><i class="bi bi-facebook"></i></a>
+            </li>
+            <!-- Josué -->
+            <!-- <li class="list-inline-item">
+              <a href="#" class="text-decoration-none text-dark"><i class="bi bi-whatsapp"></i></a>
+            </li> -->
+            <li class="list-inline-item">
+              <a href="http://wa.me/22954719538" class="text-decoration-none text-dark">
+                  <i class="bi bi-whatsapp"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:allagbejosaphat@gmail.com" class="text-decoration-none text-dark"><i class="bi bi-mailbox"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mentionsLegales" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Vision</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Le monde de nes jours connait d'énnormes avancé dans le domain du numérique et ne pas en faire une chance 
+              serait vraiment une erreur les plus graves que je ne puis faire.
+            </p>
+            <p>
+              C'est donc dans cet obtique que je m'enguage à faire tout ce qui est de mon mieux pour en faire d'une 
+              pière deux coups
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Initialiser ScrollReveal
+      ScrollReveal().reveal('.py-5', { delay: 200 });
+    
+      // Animer chaque élément à mesure qu'il entre dans la vue
+      ScrollReveal().reveal('.mb-3', { delay: 400, origin: 'bottom', distance: '50px', interval: 200 });
+    </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+            </script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+  </footer>
+</body>
+
+</html>
+
+
+
